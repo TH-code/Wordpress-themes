@@ -1,0 +1,360 @@
+@import compass/css3
+/* THml5 ✰ Boilerplate
+html
+  min-width: 1000px
+  background:
+    color: #aaaabb
+    size: 3000px 30px
+    position: center center
+    repeat: repeat-y
+  +background-image(linear-gradient(left, #aab 0%, #aab 55.80%, #223 55.80%, #223 55.84%, #aab 55.84%, #aab 55.88%, #223 55.88%, #223 100%))
+
+.no-cssgradients, .no-backgroundsize
+  background:
+    image: url(../img/back.png)
+    size: auto
+
+body
+  background: rgba(255, 255, 255, 0.8)
+  +border-radius(75px)
+  +box-shadow(-10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset)
+  margin: 40px auto 60px
+  padding: 35px 50px 50px
+  width: 815px
+
+#content
+  position: relative
+
+#banner
+  width: 200px
+  float: right
+  h1
+    font-size: 93px
+    line-height: 98px
+    text-decoration: none
+    a
+      &:visited
+        color: #667
+      color: #667
+      &:hover
+        color: #600
+    span
+      color: #112
+      font-family: 'PT Sans Caption', Arial, sans-serif
+      font-weight: bold
+      letter-spacing: -0.08em
+      margin-left: -0.015em
+      padding-right: 0.12em
+    &:hover span
+      color: #100
+  p
+    font-size: 15px
+    font-style: italic
+    margin-bottom: 85px
+    color: #900
+
+#nav, #main
+  width: 560px
+  float: left
+  margin-right: 29px
+  margin-bottom: 2em
+
+#nav
+  border-bottom: 1px solid #aab
+  min-height: 115px
+  ul
+    direction: rtl
+    margin: 0 0 1em
+    position: relative
+    text-align: right
+  li
+    line-height: 40px
+    font-size: 30px
+    list-style: disc
+    margin-right: 40px
+    float: left
+  a
+    position: relative
+    top: 7px
+    text-decoration: none
+
+
+#main
+  > article
+    margin-bottom: 32px
+    padding-bottom: 16px
+    border-bottom: 1px solid #aab
+
+#aside
+  float: left
+  margin-left: 25px
+  padding: 0 0 325px
+  width: 200px
+
+.no-canvas #aside
+  background-image: url("../images/THijs.png")
+  background-position: right bottom
+  background-repeat: no-repeat
+
+.js .back
+  background-image: url("../images/back.png")
+
+#footer
+  clear: both
+  p
+    font-size: 10px
+    display: inline
+
+/* =Typography
+ *--------------------------------------------------------------
+body
+  font: 16px / 32px Verdana, Tahoma, Arial, sans-serif
+
+h1, h2, h3, nav, .overlay .close, .overlay-trigger
+  font-family: Vollkorn, Georgia, "Times New Roman", serif
+  word-spacing: .05em
+  font-weight: normal
+
+header + p
+  font-style: italic
+  font-size: 125%
+  font-family: Lekton, monospace, sans-serif
+  margin: 32px 0
+
+h1, h2, h3, h4, h5, h6
+  a
+    text-decoration: none
+    border: 0
+
+h2
+  font-size: 32px
+  margin: 24px 0 16px
+
+h3
+  font-size: 24px
+  margin: 18px 0 12px
+
+h4
+  font-size: 18px
+
+h5
+  font-size: 16px
+
+h6
+  font-size: 14px
+
+footer
+  font-size: 12px
+  margin-top: 16px
+
+pre, code, kbd, samp
+  border-bottom: 1px dashed #600
+  border-top: 1px dashed #600
+  color: #660000
+  display: block
+  font-family: Lekton, monospace, sans-serif
+  font-size: 13px
+  margin: 32px 0
+  padding: 16px 0
+
+
+nav
+  ul
+    overflow: hidden
+    ul
+      margin-left: 16px
+  li
+    color: #667
+    font-size: 18px
+    line-height: 24px
+    margin-bottom: 5px
+    list-style: disc
+    &:visited, &:link
+      color: #667
+    &:hover
+      color: #600
+    &:active
+      color: #900
+  a
+    color: #112
+    text-decoration: none
+    border: 0
+    top: 9px
+    &:visited, &:link
+      color: #112
+    &:hover
+      color: #200
+    &:active
+      color: #400
+
+#aside > nav > ul > li
+  list-style: none
+
+#breadcrumbs
+  font-size: 16px
+  display: block
+  width: 560px
+  color: #900
+  border-bottom: 1px solid #aab
+  border-top: 1px solid #aab
+  margin: 16px 0
+  padding: 16px 0
+
+/* Search
+.searchform input
+  background: #fdf7f7
+  color: #0f0f0f
+  border-color: #a00
+  border-style: solid
+  border-width: 1px 0
+  padding: 2px 3px
+  font-size: 13px
+  height: 18px
+
+.hiddenStructure, .searchsubmit, .screen-reader-text
+  display: none
+
+input:-moz-placeholder, ::-webkit-input-placeholder, form .blur
+  color: #b66 !important
+
+/* =Table
+ * -------------------------------------------------------------------------
+table
+  border-collapse: collapse
+  border-top: solid 3px #0f0f0f
+  margin-top: 22px
+
+th, td
+  line-height: 22px
+  padding: 11px 22px 10px 0
+
+thead
+  th, td
+    padding-top: 7px
+
+tfoot
+  th, td
+    padding-bottom: 8px
+
+tbody
+  th, td
+    border-top: solid 1px #0f0f0f
+
+tfoot
+  th, td
+    border-top: solid 1px #0f0f0f
+
+th:first-child, td:first-child
+  padding-left: 0
+
+th:last-child, td:last-child
+  padding-right: 0
+
+tr:nth-child(even) td
+
+tbody tr:nth-child(odd)
+  th, td
+    background: rgba(0, 0, 0, 0.035)
+
+caption
+  top: 5px
+  margin-bottom: 13px
+
+/* =Forms
+ * -------------------------------------------------------------------------
+form
+  padding-right: 6px
+  margin-bottom: 22px
+  margin-top: 22px
+
+legend
+  padding-bottom: 22px
+
+label
+  width: 100%
+  top: 5px
+  margin-bottom: 22px
+  line-height: 22px
+  display: inline
+
+input
+  &[type="text"], &[type="password"], &[type="select"], &[type="email"], &[type="url"], &[type="search"]
+    width: 100%
+    margin-bottom: -1px
+    display: inline
+  &[type="radio"]
+    top: -1px
+    margin: 0 4px 3px 1px
+  &[type="checkbox"]
+    top: -2px
+    margin: 0 4px 3px 1px
+  &[type="file"]
+    margin: 0px 6px 3px 6px
+  &[type="submit"], &[type="reset"], &[type="button"]
+    top: 5px
+    margin-bottom: 22px
+
+select
+  display: block
+  margin: 0px
+
+textarea
+  width: 99%
+  line-height: 22px
+  margin-bottom: -2px
+  display: block
+  clear: left
+  overflow: auto
+
+li form
+  top: -4px
+
+.widgets li
+  margin-bottom: 22px
+  li
+    margin-bottom: 0
+
+a
+  color: #900
+  border-bottom: 1px solid #900
+  text-decoration: none
+  &:visited
+    color: #666
+    border-color: #666
+  &:hover, &:active
+    color: #445
+    border-color: #445
+
+/* =Content
+ * -------------------------------------------------------------------------
+.aligncenter
+  display: block
+  margin: 10px auto
+
+.alignleft
+  display: block
+  float: left
+  margin: 10px 10px 10px 0
+
+.alignright
+  display: block
+  float: right
+  margin: 10px 0 10px 10px
+
+#shop, .sticky
+  +border-radius(10px)
+
+#shop
+  clear: both
+  border: 1px solid #aab
+  padding: 12px 8px
+  background: #fff
+
+.sticky
+  border: 1px solid #aab
+  padding: 24px 16px
+  background: rgba(255, 255, 255, 0.5)
+
+.no-rgba .sticky
+  background: #fffafa
+

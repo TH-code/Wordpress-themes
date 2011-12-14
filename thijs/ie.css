@@ -1,0 +1,11 @@
+
+body { 
+    background-color:#ff0;
+    background-image:url('./images/head.png');
+    background-position: 20px 22px; 
+    background-repeat: no-repeat;
+}
+
+.grid {
+  behavior: url(border-radius.htc);
+}

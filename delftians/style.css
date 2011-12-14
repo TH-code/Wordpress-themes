@@ -1,0 +1,212 @@
+/*
+Theme Name: K2 Child Theme For Delftians
+Theme URI: http://getk2.com/
+Description: A K2 Child Theme For Delftians.
+Author: THijs
+Author URI: http://www.thijsjonkman.nl/
+Template: k2
+*/
+/* Typography */
+.content h1, 
+.content h2, 
+.content h3, 
+.content h4,
+#header,
+h1, .blog-title, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif; 
+}
+.content h1 {
+    font-size: 3em; 
+    margin-bottom: 0.5em;
+    font-style:italic;
+    font-weight:normal;
+    background:transparent url(images/deco.gif) no-repeat scroll left center;
+    margin-left:-5px;
+    padding-left:40px;
+}
+.content h2 { font-size: 2em; font-weight:normal; }
+.content h3 { font-size: 1.5em; font-weight:normal; font-style:italic; margin:0;padding:0; }
+body.page .entry-content h3 { font-size: 1.5em;}
+.content h4 { font-size: 1.35em;}
+.entry-title, .entry-title a, .entry-title a:visited, h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited, h4, h4 a, h4 a:visited {
+    color:#666699;
+}
+
+body.blog h3.entry-title {
+    background:transparent url(images/right.gif) no-repeat scroll left center;
+    margin-left:-3px;
+    padding-left:20px;
+
+}
+
+h2 { font-size: 1.75em;}
+h3 { font-size: 1.25em;}
+h4 { font-size: 1em;}
+
+.entry-content a {
+    border-bottom-width: 1px; 
+    border-bottom-style: solid;
+}
+
+.entry-content a:link {
+    border-bottom-color:#003; 
+    color:#003;
+}
+
+.entry-content a:visited {
+    border-bottom-color:#666; 
+    color:#666;
+    text-decoration: none;
+}
+
+.entry-content a:hover {
+    border-bottom-color:#336;
+    color:#336;
+    text-decoration: none;
+}
+
+.entry-content a:active {
+    border-bottom-color:#669; 
+    color:#669;
+    text-decoration: none;
+}
+/* Layout & design*/
+
+body {
+	background: #f7f7f7 url(images/body.gif) repeat scroll center top;
+	font-family: Verdana, Arial, sans-serif;
+	color: #003;
+}
+
+#page {
+    background:transparent  url('images/back.gif') left top repeat;
+    padding-top:0;
+    margin-top:30px;
+	border: 0;
+	
+}
+
+.columns-two #page {
+	width:998px;
+}
+
+/* header */
+#header {
+	background:transparent url('images/top.gif') left top no-repeat;
+	height: 235px;
+	padding: 40px 40px 0;
+	top:-25px;
+    margin-bottom: -20px;
+}
+.blog-title {
+    float:right;
+    padding:0 20px;
+}
+.blog-title a {
+	background:transparent url('images/logo.gif') left top no-repeat;
+    display:block;
+	height:166px;
+    margin:15px auto 0;
+    overflow:hidden;
+    padding:0;
+    text-indent:-9000px;
+    width:198px;
+}
+#header h2.description,
+#header p.description {
+    color:#000033;
+    font-size:2em;
+    font-style:italic;
+    font-weight:normal;
+    margin:0;
+    text-align: center;
+    padding:5px 20px 0;
+    width:200px;
+    float:right;
+    clear: both;
+}
+
+ul.menu {
+    top: 50px;
+    font-weight: bold;
+}
+
+ul.menu li a {
+    background:#ffe;
+    color:#333;
+    font-size:1.1em;
+}
+
+ul.menu li a:hover {
+    background:#ffe;
+    color:#000;
+}
+
+ul.menu li.current_page_item a, 
+ul.menu li.current_page_item a:hover, 
+ul.menu li.current_page_ancestor a, 
+ul.menu li.current_page_ancestor a:hover, 
+body.single ul.menu li.blogtab a, 
+body.single ul.menu li.blogtab a:hover {
+    background:#ffe;
+    color:#003;
+    text-decoration: underline;
+}
+
+/* content */
+
+#sidebar1 {
+    margin-bottom: -20px;
+} 
+
+#search {
+    background: transparent url(images/line.gif) no-repeat center bottom;
+    padding-bottom: 35px;
+}
+
+.secondary {
+    padding:0 20px 0 0;
+}
+
+#primary {
+    margin-top:-200px;
+    padding:10px 10px 10px 30px;
+    position:relative;
+    width:620px;
+}
+.four04 .entry-title, body.page #current-content .entry-title {
+    margin-left:0;
+    text-align:left;
+}
+.content {
+	padding:0 40px;
+}
+.calendar {
+	margin-bottom: 40px;
+}
+
+/* Footer styles */
+#footer {
+    background:transparent url(images/bottom.gif) no-repeat scroll left top;
+    margin:0 auto;
+    padding:50px 0 20px;
+    width:998px;
+}
+#footer ul,
+#footer li {
+    display:inline;
+    color: #669;
+}
+
+#footer li {
+    border-left:1px solid #669;
+    padding:0 13px 0 15px;
+}
+
+#footer li:first-child {
+    border-left:0;
+}
+#footer a {
+color:#669;
+font-weight:bold;
+}

@@ -1,0 +1,77 @@
+/*
+Theme Name: K2 Child Theme For Canis bonus
+Theme URI: http://getk2.com/
+Description: A K2 Child Theme For Canis bonus.
+Author: THijs
+Author URI: http://www.thijsjonkman.nl/
+Template: k2
+*/
+/* Typography */
+.content h1, 
+.content h2, 
+.content h3, 
+.content h4 {
+    font-family: "Goudy Old Style" ,Sylfaen , Georgia, "Times New Roman", serif; 
+}
+.content h1 { font-size: 3em; margin-bottom: 0.5em; }
+.content h2 { font-size: 2em; font-weight:normal; font-style:italic;}
+.content h3 { font-size: 1.5em; font-weight:normal; margin:0; padding:0; }
+body.page .entry-content h3 {font-size: 1.5em;}
+.content h4 { font-size: 1.35em; font-style:italic;}
+
+/* Layout & design*/
+
+body {
+	background: #222 url('images/body-bg.gif') left top repeat;;
+}
+
+#page {
+    padding-top:0;
+	border-color: #111
+}
+/* header */
+#header {
+	background:transparent url('images/head-bg.gif') left top repeat;
+	height: 165px;
+}
+.blog-title {
+    padding:0;
+}
+.blog-title a {
+	background:transparent url('images/canisbonus.png') left top no-repeat;
+    display:block;
+	height:100px;
+    margin:15px auto 0;
+    overflow:hidden;
+    padding:0;
+    text-indent:-9000px;
+    width:494px;
+}
+#header p.description {
+    color:#222;
+    font-size:1.5em;
+    margin:0  0 0 190px;
+}
+ul.menu li a {
+    background:#222;
+}
+/* content */
+.four04 .entry-title, body.page #current-content .entry-title {
+    margin-left:0;
+    text-align:left;
+}
+/* Footer styles */
+#footer ul,
+#footer li {
+    display:inline;
+}
+
+#footer li {
+    border-left:1px solid #666;
+    padding:0 13px 0 15px;
+}
+
+#footer li:first-child {
+    border-left:0;
+}
+

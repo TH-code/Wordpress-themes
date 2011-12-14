@@ -1,0 +1,431 @@
+/*   
+Theme Name: THijs
+Theme URI: 
+Description: Theme for THijs at thijsjonkman.nl.
+Author: THijs
+Author URI: http://www.thijsjonkman.nl/
+Template: thematic
+Version: 1.0
+*/
+
+/* =Deco grids cut down and pixelized
+-------------------------------------------------------------- */
+div.row {
+	float: left;
+	width: 960px;
+	display: block;
+	position: relative;
+}
+
+div.cell {
+  position: relative;
+  float: left;
+  left: 960px;
+}
+
+div.width-4  { width: 220px }
+div.width-8  { width: 460px }
+div.width-12 { width: 700px }
+div.width-16 { width: 940px }
+
+div.position-0  { margin-left: -960px }
+div.position-4  { margin-left: -720px }
+div.position-8  { margin-left: -480px }
+div.position-12 { margin-left: -240px }
+
+/* =Typography
+-------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+.menu, #blog-title a, .subscribe a, #blog-description  {
+    font-family:"CrazyCrazyRegular",Georgia,"Times New Roman",serif;
+}
+
+#blog-title a span, .subscribe a span, .entry-content p:first-child {
+    font-family:"PTSansCaptionBold",Arial,sans-serif;
+}
+
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+pre {
+    font-family: "Lucida Console", "Lucida Sans Typewriter", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+}
+
+body {
+    line-height: 22px;
+    font-size:14px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    font-weight:normal;
+    margin:22px 0 11px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .menu a {
+    text-decoration: none;
+}
+
+h5, .h5, .entry-content h5, h6, .entry-content h6 {
+    font-weight:bold;
+    letter-spacing:0.05em;
+    margin:11px 0 0;
+}
+
+h3, .h3, .entry-content h3, h5, .entry-content h5 {
+    font-style:italic;
+}
+
+h1, .h1, .entry-content h1 {
+    font-size:33px;
+    line-height:33px;
+}
+
+h2, .h2, .entry-content h2 {
+    font-size:27px;
+    line-height:33px;
+}
+
+h3, .h3, .entry-content h3 {
+    font-size:22px;
+}
+
+h4, .h4, .entry-content h4 {
+    font-size:18px;
+}
+
+h5, .h5, .entry-content h5 {
+    font-size:14px;
+}
+
+h6, .h6, .entry-content h6 {
+    font-size:16px;
+    text-transform:uppercase;
+}
+
+#blog-title {
+}
+
+#blog-title a {
+    font-size:88px;
+    line-height:77px;
+    text-decoration:none;
+}
+
+#header-search {
+    position:absolute;
+    top:110px;
+}
+
+.subscribe a {
+    line-height:22px;
+    font-size:22px;
+    text-decoration:none;
+}
+
+#blog-title a span,
+.subscribe a span {
+    letter-spacing:-0.08em;
+    padding-right:0.06em;
+}
+
+.menu {
+    font-size:22px;
+}
+
+#s {
+    font-size:14px;
+}
+
+/* =Color
+---------------------------------------------------------------------------- */
+html { 
+    background:#ff0;
+} 
+
+body {
+    background:transparent;
+}
+
+.row {
+    overflow:hidden;
+/*
+	background:transparent url('./images/background.png') left top;
+}
+
+.page-template-shop-php .row  {
+	background:transparent url('./images/background-two-column.png') left top;
+*/
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link,
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+    color: #000; 
+}
+
+h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus, h6 a:focus,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+    color: #f00; 
+}
+
+a, a:link { 
+    color:#00f; 
+}
+
+a:visited { 
+    color:#666; 
+}
+
+a:hover { 
+    color:#f00; 
+}
+
+a:active,
+a:focus { 
+    color:#f00; 
+}
+
+.entry-utility,
+.entry-meta,
+#footer {
+    color:#999;
+}
+
+.entry-meta {
+    font-style:italic;
+    margin-bottom:22px;
+}
+
+#blog-title a, .subscribe a {
+    color:#f00; 
+}
+
+#blog-title a:hover, .subscribe a:hover {
+    color:#00f;
+}
+
+#blog-title a span, .subscribe a span {
+    color:#fff;
+}
+
+.menu, .menu a, .menu a:link, .menu a:hover, .menu a:visited { 
+    color:#00f; 
+}
+
+.menu a:active, .menu a:focus, .menu a:hover { 
+    color:#f00; 
+}
+
+.column-one,
+.page-template-shop-php .column-two {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.95);
+}
+
+.column-two {
+    background-color: #f00;
+    padding-right:11px;
+}
+.column-three {
+    background-color: #000;
+}
+
+
+.column-two a, .column-two a:link { 
+    color:#000; 
+}
+
+.column-two a:visited { 
+    color:#fff; 
+}
+
+.column-two a:hover { 
+    color:#00f; 
+}
+
+.column-two a:active, .column-two a:focus { 
+    color:#00f; 
+}
+
+.column-three ul { 
+    color: #f00; 
+} 
+
+.column-three a, .column-three a:link, .column-three a:visited { 
+    color:#f00; 
+}
+
+.column-three a:hover, .column-three a:active, .column-three a:focus { 
+    color:#00f; 
+}
+
+#breadcrumbs {
+    color:#00f; 
+}
+
+#s {
+    border:1px solid #00f;
+    background:#000;
+    color:#fff;
+}
+
+.shop iframe {
+    border:1px solid #f00;
+    position:relative;
+    z-index:1;
+}
+
+/* =Layout
+ * ------------------------------------------------------------------------- */
+body {
+    padding:0 0 22px;
+    min-height:644px;
+}
+
+#grid {
+    margin:5px auto 0;
+    width:960px;
+}
+
+.cell {
+    margin-bottom:-9000px;
+    padding: 0 10px 9000px;
+}
+
+.cell > * {
+    padding:0 10px;
+    margin: 22px 0;
+}
+
+.skip-link {
+    display: none;
+}
+
+#breadcrumbs {
+    clear:both;
+    padding-top:22px;
+}
+
+#header .menu {
+    direction: rtl;
+    min-height:66px;
+}
+
+.menu li {
+    float:left;
+    line-height:33px;
+    margin-right: 25px;
+}
+
+#s {
+    width:195px;
+}
+
+#searchsubmit {
+    display:none;
+}
+
+.aside .menu {
+    margin-top:22px;
+}
+
+.aside .menu ul {
+    list-style: disc;
+}
+
+.aside .menu li {
+    margin-right: 0;
+    float:none;
+    list-style: disc;
+}
+
+.navigation .wp-pagenavi a, 
+.navigation .wp-pagenavi span {
+    border:0;
+}
+
+.xoxo ul {
+    margin-left: 0;
+    padding-left: 18px;
+}
+
+.xoxo,
+.xoxo > li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+/* =jQuery enabled
+ * ------------------------------------------------------------------------- */
+.grid {
+    -moz-border-radius:6px 6px 0 0; /* Firefox */
+    -webkit-border-radius:6px 6px 0 0; /* Safari, Chrome */
+    border-radius: 6px 6px 0 0; /* CSS3 */
+    background:#00f;
+    height:0;
+    padding-top:6px;
+}
+
+.wrapper > .wrap {
+    margin-left: -6px;
+}
+
+.wrap {
+    padding: 0; 
+    margin-left: -6px;
+    border-right:6px solid #00f;
+    width:960px;
+}
+
+div.clear {
+    clear:both;
+    float:none;
+    height:6px;
+    overflow:visible;
+    z-index:1;
+}
+
+.clear .cell {
+    margin-bottom:0;
+    padding:0 26px 0 0;
+} 
+
+.clear div {
+    -moz-border-radius:0 0 0 6px; /* Firefox */
+    -webkit-border-radius:0 0 0 6px; /* Safari, Chrome */
+    border-radius: 0 0 0 6px; /* CSS3 */
+    height:6px;
+}
+
+.clear .position-0 {
+    background-color:rgba(155,155,255,0.8);
+}
+
+.page-template-shop-php .clear .position-0 { 
+    width:720px;
+}
+
+.page-template-shop-php .clear .position-8 { 
+    background-color:transparent;
+}
+
+.clear .position-8 { 
+    background-color:#815;
+}
+
+.clear .position-12 { 
+    background-color:#005;
+}
+
+.clear .closer {
+    background-color:#0000FF;
+    float:left;
+    left:100%;
+    margin-left:-6px;
+    position:relative;
+    width:6px;
+}
+

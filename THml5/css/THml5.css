@@ -1,0 +1,142 @@
+/* THml5 ✰ Boilerplate */
+html { min-width: 1000px; background-color: #aaaabb; background-size: 3000px 30px; background-position: center center; background-repeat: repeat-y; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #aaaabb), color-stop(55.8%, #aaaabb), color-stop(55.8%, #222233), color-stop(55.84%, #222233), color-stop(55.84%, #aaaabb), color-stop(55.88%, #aaaabb), color-stop(55.88%, #222233), color-stop(100%, #222233)); background-image: -webkit-linear-gradient(left, #aaaabb 0%, #aaaabb 55.8%, #222233 55.8%, #222233 55.84%, #aaaabb 55.84%, #aaaabb 55.88%, #222233 55.88%, #222233 100%); background-image: -moz-linear-gradient(left, #aaaabb 0%, #aaaabb 55.8%, #222233 55.8%, #222233 55.84%, #aaaabb 55.84%, #aaaabb 55.88%, #222233 55.88%, #222233 100%); background-image: -o-linear-gradient(left, #aaaabb 0%, #aaaabb 55.8%, #222233 55.8%, #222233 55.84%, #aaaabb 55.84%, #aaaabb 55.88%, #222233 55.88%, #222233 100%); background-image: linear-gradient(left, #aaaabb 0%, #aaaabb 55.8%, #222233 55.8%, #222233 55.84%, #aaaabb 55.84%, #aaaabb 55.88%, #222233 55.88%, #222233 100%); }
+
+.no-cssgradients, .no-backgroundsize { background-image: url(../img/back.png); background-size: auto; }
+
+body { background: rgba(255, 255, 255, 0.8); -moz-border-radius: 75px; -webkit-border-radius: 75px; -o-border-radius: 75px; -ms-border-radius: 75px; -khtml-border-radius: 75px; border-radius: 75px; -moz-box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; -webkit-box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; -o-box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; margin: 40px auto 60px; padding: 35px 50px 50px; width: 815px; }
+
+#content { position: relative; }
+
+#banner { width: 200px; float: right; }
+#banner h1 { font-size: 93px; line-height: 98px; text-decoration: none; }
+#banner h1 a { color: #666677; }
+#banner h1 a:visited { color: #666677; }
+#banner h1 a:hover { color: #660000; }
+#banner h1 span { color: #111122; font-family: "PT Sans Caption", Arial, sans-serif; font-weight: bold; letter-spacing: -0.08em; margin-left: -0.015em; padding-right: 0.12em; }
+#banner h1:hover span { color: #110000; }
+#banner p { font-size: 15px; font-style: italic; margin-bottom: 85px; color: #990000; }
+
+#nav, #main { width: 560px; float: left; margin-right: 29px; margin-bottom: 2em; }
+
+#nav { border-bottom: 1px solid #aaaabb; min-height: 115px; }
+#nav ul { direction: rtl; margin: 0 0 1em; position: relative; text-align: right; }
+#nav li { line-height: 40px; font-size: 30px; list-style: disc; margin-right: 40px; float: left; }
+#nav a { position: relative; top: 7px; text-decoration: none; }
+
+#main > article { margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid #aaaabb; }
+
+#aside { float: left; margin-left: 25px; padding: 0 0 325px; width: 200px; }
+
+.no-canvas #aside { background-image: url("../images/THijs.png"); background-position: right bottom; background-repeat: no-repeat; }
+
+.js .back { background-image: url("../images/back.png"); }
+
+#footer { clear: both; }
+#footer p { font-size: 10px; display: inline; }
+
+/* =Typography -------------------------------------------------------------- */
+body { font: 16px/32px Verdana, Tahoma, Arial, sans-serif; }
+
+h1, h2, h3, nav, .overlay .close, .overlay-trigger { font-family: Vollkorn, Georgia, "Times New Roman", serif; word-spacing: 0.05em; font-weight: normal; }
+
+header + p { font-style: italic; font-size: 125%; font-family: Lekton, monospace, sans-serif; margin: 32px 0; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; border: 0; }
+
+h2 { font-size: 32px; margin: 24px 0 16px; }
+
+h3 { font-size: 24px; margin: 18px 0 12px; }
+
+h4 { font-size: 18px; }
+
+h5 { font-size: 16px; }
+
+h6 { font-size: 14px; }
+
+footer { font-size: 12px; margin-top: 16px; }
+
+pre, code, kbd, samp { border-bottom: 1px dashed #660000; border-top: 1px dashed #660000; color: #660000; display: block; font-family: Lekton, monospace, sans-serif; font-size: 13px; margin: 32px 0; padding: 16px 0; }
+
+nav ul { overflow: hidden; }
+nav ul ul { margin-left: 16px; }
+nav li { color: #666677; font-size: 18px; line-height: 24px; margin-bottom: 5px; list-style: disc; }
+nav li:visited, nav li:link { color: #666677; }
+nav li:hover { color: #660000; }
+nav li:active { color: #990000; }
+nav a { color: #111122; text-decoration: none; border: 0; top: 9px; }
+nav a:visited, nav a:link { color: #111122; }
+nav a:hover { color: #220000; }
+nav a:active { color: #440000; }
+
+#aside > nav > ul > li { list-style: none; }
+
+#breadcrumbs { font-size: 16px; display: block; width: 560px; color: #990000; border-bottom: 1px solid #aaaabb; border-top: 1px solid #aaaabb; margin: 16px 0; padding: 16px 0; }
+
+/* Search */
+.searchform input { background: #fdf7f7; color: #0f0f0f; border-color: #aa0000; border-style: solid; border-width: 1px 0; padding: 2px 3px; font-size: 13px; height: 18px; }
+
+.hiddenStructure, .searchsubmit, .screen-reader-text { display: none; }
+
+input:-moz-placeholder, ::-webkit-input-placeholder, form .blur { color: #bb6666 !important; }
+
+/* =Table ------------------------------------------------------------------------- */
+table { border-collapse: collapse; border-top: solid 3px #0f0f0f; margin-top: 22px; }
+
+th, td { line-height: 22px; padding: 11px 22px 10px 0; }
+
+thead th, thead td { padding-top: 7px; }
+
+tfoot th, tfoot td { padding-bottom: 8px; }
+
+tbody th, tbody td { border-top: solid 1px #0f0f0f; }
+
+tfoot th, tfoot td { border-top: solid 1px #0f0f0f; }
+
+th:first-child, td:first-child { padding-left: 0; }
+
+th:last-child, td:last-child { padding-right: 0; }
+
+tbody tr:nth-child(odd) th, tbody tr:nth-child(odd) td { background: rgba(0, 0, 0, 0.035); }
+
+caption { top: 5px; margin-bottom: 13px; }
+
+/* =Forms ------------------------------------------------------------------------- */
+form { padding-right: 6px; margin-bottom: 22px; margin-top: 22px; }
+
+legend { padding-bottom: 22px; }
+
+label { width: 100%; top: 5px; margin-bottom: 22px; line-height: 22px; display: inline; }
+
+input[type="text"], input[type="password"], input[type="select"], input[type="email"], input[type="url"], input[type="search"] { width: 100%; margin-bottom: -1px; display: inline; }
+input[type="radio"] { top: -1px; margin: 0 4px 3px 1px; }
+input[type="checkbox"] { top: -2px; margin: 0 4px 3px 1px; }
+input[type="file"] { margin: 0px 6px 3px 6px; }
+input[type="submit"], input[type="reset"], input[type="button"] { top: 5px; margin-bottom: 22px; }
+
+select { display: block; margin: 0px; }
+
+textarea { width: 99%; line-height: 22px; margin-bottom: -2px; display: block; clear: left; overflow: auto; }
+
+li form { top: -4px; }
+
+.widgets li { margin-bottom: 22px; }
+.widgets li li { margin-bottom: 0; }
+
+a { color: #990000; border-bottom: 1px solid #990000; text-decoration: none; }
+a:visited { color: #666666; border-color: #666666; }
+a:hover, a:active { color: #444455; border-color: #444455; }
+
+/* =Content ------------------------------------------------------------------------- */
+.aligncenter { display: block; margin: 10px auto; }
+
+.alignleft { display: block; float: left; margin: 10px 10px 10px 0; }
+
+.alignright { display: block; float: right; margin: 10px 0 10px 10px; }
+
+#shop, .sticky { -moz-border-radius: 10px; -webkit-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; -khtml-border-radius: 10px; border-radius: 10px; }
+
+#shop { clear: both; border: 1px solid #aaaabb; padding: 12px 8px; background: white; }
+
+.sticky { border: 1px solid #aaaabb; padding: 24px 16px; background: rgba(255, 255, 255, 0.5); }
+
+.no-rgba .sticky { background: #fffafa; }

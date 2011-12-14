@@ -1,0 +1,250 @@
+/*
+Theme Name: K2 Child Theme For Horny God
+Theme URI: http://getk2.com/
+Description: A K2 Child Theme For Horny God.
+Author: THijs
+Author URI: http://www.thijsjonkman.nl/
+Template: k2
+*/
+/* Typography */
+.content h1, 
+.content h2, 
+.content h3, 
+.content h4,
+#header,
+h1, .blog-title, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif; 
+}
+/*
+.content h1 {
+    font-size: 3em; 
+    margin-bottom: 0.5em;
+    font-style:italic;
+    font-weight:normal;
+    background:transparent url(images/deco.gif) no-repeat scroll left center;
+    margin-left:-5px;
+    padding-left:40px;
+}
+.content h2 { font-size: 2em; font-weight:normal; }
+.content h3 { font-size: 1.5em; font-weight:normal; font-style:italic; margin:0;padding:0; }
+body.page .entry-content h3 { font-size: 1.5em;}
+.content h4 { font-size: 1.35em;}
+.entry-title, .entry-title a, .entry-title a:visited, h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited, h4, h4 a, h4 a:visited {
+    color:#666699;
+}
+
+body.blog h3.entry-title {
+    background:transparent url(images/right.gif) no-repeat scroll left center;
+    margin-left:-3px;
+    padding-left:20px;
+
+}
+
+h2 { font-size: 1.75em;}
+h3 { font-size: 1.25em;}
+h4 { font-size: 1em;}
+
+.entry-content a {
+    border-bottom-width: 1px; 
+    border-bottom-style: solid;
+}
+
+.entry-content a:link {
+    border-bottom-color:#003; 
+    color:#003;
+}
+
+.entry-content a:visited {
+    border-bottom-color:#666; 
+    color:#666;
+    text-decoration: none;
+}
+
+.entry-content a:hover {
+    border-bottom-color:#336;
+    color:#336;
+    text-decoration: none;
+}
+
+.entry-content a:active {
+    border-bottom-color:#669; 
+    color:#669;
+    text-decoration: none;
+} 
+ */
+
+/* Layout & design*/
+
+html,body {
+    height:100%;
+}
+body {
+    background:transparent url('images/back.jpg') repeat scroll 0 0;
+	font-family: Verdana, Arial, sans-serif;
+	color: #003;
+}
+body.columns-two #primary-wrapper {
+    margin-left: 291px;
+    width:453px;
+}
+body.columns-two #primary {
+    margin-top:-85px;
+    margin-right:0;
+    padding:0 20px;
+    width:413px;
+}
+.content {
+    background:transparent url(images/fr.png) repeat-y scroll 259px top;
+    position: relative;
+    padding: 0 0 30px;
+}
+#sidebar-1 {
+    position: absolute;
+    top:-23px;
+    left:23px;
+}
+#sidebar-2 {
+    margin-top:-125px;
+}
+.secondary {
+    color:#000;
+}
+.secondary a {
+    color:#fff;
+}
+#page {
+    background:transparent url(images/girl.jpg) no-repeat scroll left bottom;
+    padding-top:0;
+    margin-top:15px;
+	border: 0;
+    min-height:100%;
+}
+.columns-two #page {
+	width:1000px;
+}
+#header {
+    background:transparent url(images/ft.png) no-repeat scroll 259px bottom;
+    height:130px;
+}
+#footer {
+    background:transparent url(images/fb.png) no-repeat scroll 261px top;
+    height:26px;
+    padding:50px 255px 50px 290px;
+}
+#footer ul {
+    padding-top: 35px;
+    background:transparent url(images/bottom.png) no-repeat scroll center top;
+    color: #333;
+}
+#footer ul,
+#footer li {
+    display:inline;
+}
+#footer li {
+    border-left: 1px solid #666;
+    padding: 0 10px;
+}
+#footer li:first-child {
+    border-left: 0;
+}
+
+/* header */
+.blog-title {
+    float:left;
+    padding:0;
+}
+.blog-title a {
+    background:transparent url(images/logo.png) no-repeat scroll left top;
+    display:block;
+	height:106px;
+    margin:0 auto;
+    overflow:hidden;
+    padding:0;
+    text-indent:-9000px;
+    width:259px;
+}
+
+.entry-head {
+    background:transparent url(images/top.png) no-repeat scroll center bottom;
+    margin:10px 0 20px;
+    padding-bottom: 25px;
+    position:relative;
+}
+.entry-title, h1 { font-size:32px; }
+h2 { color:#333; font-size:22px; }
+h3 { font-size: 20px; color: #333; }
+h4 { font-size: 16px; }
+h2, h3 { font-weight: normal; }
+#primary h1 a, #primary h2 a, #primary h3 a, #primary h4 a,
+h1 a, h2 a, h3 a, h4 a {
+	color: #000;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:Georgia,Palatino,Times New Roman,serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom:10px;
+}
+.widget_pages {
+    float:left;
+    margin: 110px 0 0;
+    }
+    .widget_pages h4 {
+        display: none;
+    }
+    .widget_pages ul {
+        width: 200px;
+        margin: 0;
+        list-style-type: none;
+    }
+    .widget_pages ul li {
+        text-align: right;
+        margin: 10px 0;
+    }
+    .widget_pages ul li a {
+	    background: url(images/left-w.png) no-repeat left bottom;
+        font-size: 18px;
+        font-family:Georgia,Palatino,Times New Roman,serif;	
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        font-style: italic;
+        padding-left: 30px;
+    }
+    .widget_pages ul .current_page_item a,
+    .widget_pages ul li a:hover {
+	    background: url(images/left-b.png) no-repeat left bottom;
+        color: #000;
+}
+
+#sidebar-2 h4 {
+	background: url(images/top-w.png) no-repeat bottom center;
+	padding-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+#sidebar-2 .widget {
+    border-bottom:1px solid #fff;
+    padding:0 15px 15px;
+}
+#search-label.overlabel-apply {
+    background-color:transparent;
+    color: #cacaca;
+}
+/* forms */
+input[type="submit"] {
+    background:#000000 url(images/right-w.png) no-repeat scroll 95% center;
+    border:0 none;
+    color:#FFFFFF;
+    padding:3px 33px 3px 10px;
+    cursor: pointer;
+}
+input[type="text"], textarea {
+    background:transparent;
+    border:1px solid #000000;
+    color:#333;
+    margin:0;
+    padding:2px;
+}
