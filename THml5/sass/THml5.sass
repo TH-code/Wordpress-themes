@@ -20,6 +20,7 @@ body
   +box-shadow(-10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset)
   margin: 40px auto 60px
   padding: 35px 50px 50px
+  position: relative
   width: 815px
 
 #content
@@ -88,13 +89,14 @@ body
 #aside
   float: left
   margin-left: 25px
-  padding: 0 0 325px
+  padding: 0
   width: 200px
 
 .no-canvas #aside
   background-image: url("../images/THijs.png")
   background-position: right bottom
   background-repeat: no-repeat
+  padding: 0 0 325px
 
 .js .back
   background-image: url("../images/back.png")
@@ -104,6 +106,17 @@ body
   p
     font-size: 10px
     display: inline
+#c
+  position: absolute
+  top: -40px
+  left: -40px
+#cw
+  height: 10px
+  left: 50%
+  margin-left: -500px
+  position: absolute
+  top: 0
+  width: 1000px
 
 /* =Typography
  *--------------------------------------------------------------

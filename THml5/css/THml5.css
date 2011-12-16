@@ -3,7 +3,7 @@ html { min-width: 1000px; background-color: #aaaabb; background-size: 3000px 30p
 
 .no-cssgradients, .no-backgroundsize { background-image: url(../img/back.png); background-size: auto; }
 
-body { background: rgba(255, 255, 255, 0.8); -moz-border-radius: 75px; -webkit-border-radius: 75px; -o-border-radius: 75px; -ms-border-radius: 75px; -khtml-border-radius: 75px; border-radius: 75px; -moz-box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; -webkit-box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; -o-box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; margin: 40px auto 60px; padding: 35px 50px 50px; width: 815px; }
+body { background: rgba(255, 255, 255, 0.8); -moz-border-radius: 75px; -webkit-border-radius: 75px; -o-border-radius: 75px; -ms-border-radius: 75px; -khtml-border-radius: 75px; border-radius: 75px; -moz-box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; -webkit-box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; -o-box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; box-shadow: -10px -10px 10px 5px rgba(255, 255, 255, 0.75), 15px 15px 10px 10px rgba(255, 255, 255, 0.75) inset, 10px 10px 10px 5px rgba(0, 0, 20, 0.5), 35px 45px 20px rgba(0, 0, 20, 0.4), -15px -15px 10px 10px rgba(0, 0, 20, 0.7) inset; margin: 40px auto 60px; padding: 35px 50px 50px; position: relative; width: 815px; }
 
 #content { position: relative; }
 
@@ -25,14 +25,18 @@ body { background: rgba(255, 255, 255, 0.8); -moz-border-radius: 75px; -webkit-b
 
 #main > article { margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid #aaaabb; }
 
-#aside { float: left; margin-left: 25px; padding: 0 0 325px; width: 200px; }
+#aside { float: left; margin-left: 25px; padding: 0; width: 200px; }
 
-.no-canvas #aside { background-image: url("../images/THijs.png"); background-position: right bottom; background-repeat: no-repeat; }
+.no-canvas #aside { background-image: url("../images/THijs.png"); background-position: right bottom; background-repeat: no-repeat; padding: 0 0 325px; }
 
 .js .back { background-image: url("../images/back.png"); }
 
 #footer { clear: both; }
 #footer p { font-size: 10px; display: inline; }
+
+#c { position: absolute; top: -40px; left: -40px; }
+
+#cw { height: 10px; left: 50%; margin-left: -500px; position: absolute; top: 0; width: 1000px; }
 
 /* =Typography -------------------------------------------------------------- */
 body { font: 16px/32px Verdana, Tahoma, Arial, sans-serif; }
