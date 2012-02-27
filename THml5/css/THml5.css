@@ -14,7 +14,7 @@ body { background: rgba(255, 255, 255, 0.8); -moz-border-radius: 75px; -webkit-b
 #banner h1 a:hover { color: #660000; }
 #banner h1 span { color: #111122; font-family: "PT Sans Caption", Arial, sans-serif; font-weight: bold; letter-spacing: -0.08em; margin-left: -0.015em; padding-right: 0.12em; }
 #banner h1:hover span { color: #110000; }
-#banner p { font-size: 15px; font-style: italic; margin-bottom: 85px; color: #990000; }
+#banner p { font-size: 15px; font-style: italic; color: #990000; }
 
 #nav, #main { width: 560px; float: left; margin-right: 29px; margin-bottom: 2em; }
 

@@ -7,9 +7,13 @@ $(document).ready(function () {
         ptsl = pts.length,
         $content = $('#content'),
         $header = $content.children('header'),
+        $nav = $content.children('#nav'),
         $logo = $header.children('h1'),
         $desc = $header.children('p'),
         logoHeight = $logo.height() + $desc.height(),
+        navHeight = $nav.height() + 33,
+        compensation =  420,
+        compHeight = (logoHeight >= navHeight) ? (compensation - logoHeight) : (compensation - navHeight),
         canvasHeight = 900,
         canvasWidth = 1280,
         $canvas = $('<canvas id="c" height="' + canvasHeight + '" width="' +
@@ -212,11 +216,8 @@ $(document).ready(function () {
 
     // if canvas is supported
     if (Modernizr.canvas) {
-
-        $('#aside').css({
-            marginTop: 280 - logoHeight
-        });
-
+        
+        $('#aside').css({ marginTop: compHeight });
         $canvas.insertBefore($content);
 
         initPointCollection();
