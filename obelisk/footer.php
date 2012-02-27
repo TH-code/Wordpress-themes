@@ -9,7 +9,7 @@
  * @since Twenty Eleven 1.0
  */
 ?>
-
+	<div style="clear:both">&nbsp;</div>
 	</div><!-- #main -->
 
 	<footer id="colophon" role="contentinfo">
@@ -22,14 +22,8 @@
 				get_sidebar( 'footer' );
 		?>
 
-        <p>Steendrukkerij Obelisk<br /> 
-           Hefswalsterweg <b>12</b><br /> 
-           <b>9982</b> TR<br /> 
-           Uithuizermeeden<br /> 
-           tel: <b>(0031) 0595 413526</b></p>
+        <p>Steendrukkerij Obelisk, Hefswalsterweg <b>12</b>, <b>9982</b> TR, Uithuizermeeden, tel: <b>(0031) 0595 413526</b></p>
 
-        <a id="footer-icon" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-	
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
