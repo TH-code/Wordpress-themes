@@ -94,7 +94,7 @@ body
 #obelisk
   background-image: url("img/icon-base.png")
   overflow: hidden
-  text-indent: -200px
+  text-indent: -400px
   position: relative
   span:before, span:after, &:after
     @extend .smooth
@@ -105,20 +105,20 @@ body
   span:before
     background-image: url("img/icon-arm.png")
   &:hover span:before
-    +transform(rotate(103deg) scaleY(0.5))
-    +transform-origin(50% 45%)
+    +transform(rotate(103deg) scaleY(0.4))
+    +transform-origin(51.5%, 47.6%)
   span:after
     background-image: url("img/icon-ball.png")
     margin-top: 0
   &:after
     background-image: url("img/icon-over.png")
   &:hover span:after
-    margin-top: -40px
+    margin-top: -30px
   &, span:before, span:after, &:after
     display: block
     float: right
-    height: 400px
-    width: 654px
+    height: 300px
+    width: 491px
 
 #primary
   float: left

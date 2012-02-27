@@ -103,7 +103,7 @@ body {
 #obelisk {
   background-image: url("img/icon-base.png");
   overflow: hidden;
-  text-indent: -200px;
+  text-indent: -400px;
   position: relative;
 }
 #obelisk span:before, #obelisk span:after, #obelisk:after {
@@ -116,16 +116,16 @@ body {
   background-image: url("img/icon-arm.png");
 }
 #obelisk:hover span:before {
-  -moz-transform: rotate(103deg) scaleY(0.5);
-  -webkit-transform: rotate(103deg) scaleY(0.5);
-  -o-transform: rotate(103deg) scaleY(0.5);
-  -ms-transform: rotate(103deg) scaleY(0.5);
-  transform: rotate(103deg) scaleY(0.5);
-  -moz-transform-origin: 50% 45% 50%;
-  -webkit-transform-origin: 50% 45% 50%;
-  -o-transform-origin: 50% 45% 50%;
-  -ms-transform-origin: 50% 45% 50%;
-  transform-origin: 50% 45% 50%;
+  -moz-transform: rotate(103deg) scaleY(0.4);
+  -webkit-transform: rotate(103deg) scaleY(0.4);
+  -o-transform: rotate(103deg) scaleY(0.4);
+  -ms-transform: rotate(103deg) scaleY(0.4);
+  transform: rotate(103deg) scaleY(0.4);
+  -moz-transform-origin: 51.5% 47.6%;
+  -webkit-transform-origin: 51.5% 47.6%;
+  -o-transform-origin: 51.5% 47.6%;
+  -ms-transform-origin: 51.5% 47.6%;
+  transform-origin: 51.5% 47.6%;
 }
 #obelisk span:after {
   background-image: url("img/icon-ball.png");
@@ -135,13 +135,13 @@ body {
   background-image: url("img/icon-over.png");
 }
 #obelisk:hover span:after {
-  margin-top: -40px;
+  margin-top: -30px;
 }
 #obelisk, #obelisk span:before, #obelisk span:after, #obelisk:after {
   display: block;
   float: right;
-  height: 400px;
-  width: 654px;
+  height: 300px;
+  width: 491px;
 }
 
 #primary {
