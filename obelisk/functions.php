@@ -1,4 +1,4 @@
-<?
+<?php
 
 // add a favicon to your site
 function blog_favicon() {

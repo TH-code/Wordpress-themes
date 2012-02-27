@@ -6,8 +6,8 @@
 @import "compass/css3/box-shadow"
 
 $side-margin: 7.6%
-$backgroundColor: #ddb
-$contentColor: #eed
+$backgroundColor: #eed
+$contentColor: #ffe
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
   border: 0
@@ -65,16 +65,20 @@ body
 #page
   margin: 2em auto
   max-width: 1000px
+  position: relative
 
 #branding nav
   @extend .contentPaper
   +transform(rotate(2deg))
   width: 55%
   float: right
-  margin-right: 3em
+  margin-right: 1.5em
   margin-top: -300px
   padding-top: 300px
   position: relative
+  li
+    color: #600
+    color: rgba(150,0,0,.75)
   ul:not(.children)
     > li
       float: left
@@ -87,31 +91,30 @@ body
   .children
     margin-left: 1em
 
-#footer-icon
+#obelisk
   background-image: url("img/icon-base.png")
   overflow: hidden
   text-indent: -200px
-  position: absolute
-  top: -30px
-  right: $side-margin
-  &:before, &:after
+  position: relative
+  span:before, span:after, &:after
     @extend .smooth
     position: absolute
     content: "\00a0"
     top: 0
     left: 0
-  &:before
+  span:before
     background-image: url("img/icon-arm.png")
-  &:hover:before
-    +transform(rotate(103deg) scaleY(0.35))
-    margin-top: -17px
-    margin-left: 17px
-  &:after
+  &:hover span:before
+    +transform(rotate(103deg) scaleY(0.5))
+    +transform-origin(50% 45%)
+  span:after
     background-image: url("img/icon-ball.png")
     margin-top: 0
-  &:hover:after
+  &:after
+    background-image: url("img/icon-over.png")
+  &:hover span:after
     margin-top: -40px
-  &, &:before, &:after
+  &, span:before, span:after, &:after
     display: block
     float: right
     height: 400px
@@ -329,7 +332,8 @@ body, input, textarea
   letter-spacing: .1em
 
 html
-  background: $backgroundColor url('img/background.png')
+  @extend .grain
+  background-color: $backgroundColor
 
 #page
   @extend .contentPaper
@@ -478,10 +482,12 @@ input
 
 // Links
 a
-  color: #1982d1
+  color: #600
+  color: rgba(150,0,0,.75)
   text-decoration: none
   &:focus, &:active, &:hover
-    text-decoration: underline
+    color: #400
+    color: rgba(100,0,0,.75)
 
 // Assistive text
 .assistive-text
@@ -510,34 +516,10 @@ a
   position: relative
 
 #site-title
-  font:
-    family: Georgia,"Times New Roman","Bitstream Charter",Times,serif
-    weight: 700
-  letter-spacing: .5em
-  margin: 2em 0 2em 3em
-  color: rgba(0,0,0,.7)
-  text-transform: uppercase
-  float: left
-  span
-    +transform(matrix(0.9, -0.1, 0, 1.2, -0.2em, 0.3em))
-    border:
-      top: 2px solid #000
-      color: rgba(0,0,0,.7)
-    font-size: 2.4em
-    line-height: 1.2
-    padding: 0 .2em
-    &:before, &:after
-      content: '•'
-      padding: 0 .2em
-  a
-    +link-colors(rgba(0,0,0,.7), rgba(0,0,0,.5))
-    border:
-      bottom: 2px solid #000
-      color: rgba(0,0,0,.7)
-    text-decoration: none
-    padding: 0 .2em
-    margin: 0
-    position: relative
+  position: absolute
+  width: 400px
+  height: 300px
+  overflow: hidden
 
 #site-description
   color: #7a7a7a
@@ -603,7 +585,7 @@ a
 
 #main
   clear: both
-  padding: 1.625em 0 0
+  padding: 1.625em 0
 
 .page-title
   color: #666
@@ -1992,14 +1974,18 @@ p.comment-form-comment
 
 #colophon
   @extend .contentPaper
+  bottom: -7em
   clear: both
-  position: relative
-  padding: 2em $side-margin 2em
-  min-height: 260px
-  width: 700px
-  left: 175px
-  top: 1em
+  left: -1em
+  padding: 52em 7.6% 2em
+  position: absolute
+  width: 800px
+  z-index: -1
   +transform(rotate(-1deg))
+  > p
+    text-transform: lowercase
+    > b
+      font-size: 88%
 
 #supplementary
   border-top: 1px solid #ddd
@@ -2354,7 +2340,7 @@ p.comment-form-comment
   +box-shadow(0px 2px 5px 1px rgba(0,0,0,.3))
 
 .grain
-  background-image: inline-image('background.png')
+  background-image: inline-image('back.png')
 
 $default-transition-duration: 2s
 .smooth
