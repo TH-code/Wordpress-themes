@@ -1,16 +1,14 @@
 /*!
-Theme Name: BootstrapWP
-Theme URI: http://bootstrapwp.rachelbaker.me
-Author: Rachel Baker
-Author URI: http://www.rachelbaker.me
+Theme Name: OhMyDog!
+Theme URI: http://thijs.biz
+Author: THijs
+Author URI: http://thijs.biz
 Description: A semantic HTML/CSS framework base theme for WordPress Developers ported from Twitter Bootstrap
-Version: .90
+Version: .01d
 =======
 License: GNU General Public License
 License URI: license.txt
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
 /* Loading Standard Bootstrap 2.1 LESS Files
 ----------------------------------------------------------------------------------------*/
@@ -40,7 +38,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  background: url('../img/blackboard.jpg') repeat center center;
+  background: #eee url('../img/blackboard.jpg') repeat center center;
 }
 a:focus {
   outline: thin dotted #333;
@@ -3889,7 +3887,8 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
-.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle:hover {
   background-color: #111111;
   color: #ffffff;
 }
@@ -7102,20 +7101,49 @@ img.aligncenter {
 ----------------------------------------------------------------------------------------*/
 @font-face {
     font-family: 'EraserRegular';
-    src: url('EraserRegular-webfont.eot');
-    src: url('EraserRegular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('EraserRegular-webfont.woff') format('woff'),
-         url('EraserRegular-webfont.ttf') format('truetype'),
-         url('EraserRegular-webfont.svg#EraserRegular') format('svg');
+    src: url('../fonts/EraserRegular-webfont.eot');
+    src: url('../fonts/EraserRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/EraserRegular-webfont.woff') format('woff'),
+         url('../fonts/EraserRegular-webfont.ttf') format('truetype'),
+         url('../fonts/EraserRegular-webfont.svg#EraserRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 .masthead { font-family: 'EraserRegular', Arial, sans-serif; }
 .masthead .h1 { text-decoration: none; color: rgb(70, 166, 220); }
-h1 { font-size: 60px; line-height: 1.15 letter-spacing: 0; }
-h2 { font-size: 30px; line-height: 1.25 letter-spacing: 0; }
-p { font-size: 18px; line-height: 27px; }
-.masthead { padding: 15px 0 0; }
 
-.widget_mslswidget { text-align: center; }
+.masthead .h1 { font-size: 90px; }
+@media (min-width: 1200px) { .masthead .h1 { font-size: 120px; } } 
+@media (max-width: 1199px) { .masthead .h1 { font-size: 90px; }  } 
+@media (max-width: 979px)  { .masthead .h1 { font-size: 70px; }  } 
+@media (max-width: 767px)  { .masthead .h1 { font-size: 120px; } } 
+@media (max-width: 680px)  { .masthead .h1 { font-size: 100px; } } 
+@media (max-width: 580px)  { .masthead .h1 { font-size: 80px; }  } 
+@media (max-width: 480px)  { .masthead .h1 { font-size: 60px; }  } 
+@media (max-width: 380px)  { .masthead .h1 { font-size: 40px; }  }
+	
+h1 { color: rgb(70, 166, 220) !important; font-size: 60px; line-height: 1.15 letter-spacing: 0; }
+h2 { color: rgb(30, 111, 158) !important; font-size: 25px; line-height: 1.25 letter-spacing: 0; }
+h3 { color: rgb(13, 51, 72) !important; font-size: 20px; }
+h2, h3 { margin-top: 1.5em; }
+p, ul, ol, dl { font-size: 18px; line-height: 27px; }
+.page-title h1 { line-height: 1; }
+.masthead { padding: 15px 0 0; }
+.widget_synved_social_share, .widget_synved_social_follow, .widget_mslswidget, .widget-title { text-align: center; }
+#site-description { margin-bottom: 2em; }
+#main-menu > li > a { font-size: 110%; }
+#main-menu > li > ul { font-size: 90%; }
+#main-menu li.dropdown > .dropdown-toggle:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+#main-menu li.dropdown > .dropdown-toggle:hover .caret {
+    border-bottom-color: #ffffff;
+    border-top-color: #ffffff;
+}
+.page-template-page-home-php .marketing .textwidget {
+    font-size: 140%;
+}
+.oldie { background-image: none; }
+.oldie .marketing .textwidget a { float: none; display: block; }
+.form-horizontal p.control-label { padding-top: 0; }

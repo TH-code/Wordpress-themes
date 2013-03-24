@@ -1,5 +1,5 @@
 /* ===================================================
- * bootstrapwp.demo.js v.90
+ * ohmydog.js v.01c
  * ===================================================
 
 // NOTICE!! This JS file is included for reference.
@@ -16,7 +16,8 @@
     $("ul.nav li.dropdown > a").each(function () {
     	var $me = $(this).attr('style', 'float:left'),
     	    href = $me.attr('href');
-    	$me.before('<a style="float: right; margin-left: -10px; padding: 10px 13px 10px 10px;" class="dropdown-toggle" data-toggle="dropdown" href="'+href+'"><b class="caret"></b></a>');
+    	$me.before('<a style="float: right; margin-left: -10px; margin-right: 10px; padding: 10px 13px 10px 10px;" ' +
+    			   'class="dropdown-toggle" data-toggle="dropdown" href="'+href+'"><b class="caret"></b></a>'); 
     })
     // $("ul.nav li.dropdown a").addClass("dropdown-toggle");
     // $("ul.dropdown-menu li a").removeClass("dropdown-toggle");

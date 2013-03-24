@@ -3,7 +3,17 @@
 	    <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
           <div class="row">
             <div class="span8">
-              <span class="h1">OhMyDog!</span>
+              <span class="h1">
+               	<img class="text" title="OhMyDog!" alt="OhMyDog!" src="<?php bloginfo('template_directory'); ?>/img/OhMyDog!.png"/>
+                    <!--span style="color: red">O</span
+                   ><span style="color: orange">h</span
+                   ><span style="color: yellow">M</span
+                   ><span style="color: rgb(146,208,80)">y</span
+                   ><span>D</span
+                   ><span style="color: rgb(178,161,199)">o</span
+                   ><span style="color: rgb(197,79,197)">g</span
+                   ><span style="color: red">!</span-->
+              </span>
             </div>
             <div class="span4">
               <img class="logo" width="250" height="242" title="OhMyDog!" alt="OhMyDog!" src="<?php bloginfo('template_directory'); ?>/img/ohmydog.png"/>

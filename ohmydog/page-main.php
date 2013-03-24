@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home Hero Template with 3 widget areas
+ * Template Name: Main Home Template no menu and search
  *
  *
  * @package WP-Bootstrap
@@ -18,7 +18,7 @@ get_header(); ?>
             <div class="span8">
               <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                 <h1 class="h1">
-               	<img class="text" title="OhMyDog!" alt="OhMyDog!" src="<?php bloginfo('template_directory'); ?>/img/OhMyDog!.png"/>
+	               	<img class="text" title="OhMyDog!" alt="OhMyDog!" src="<?php bloginfo('template_directory'); ?>/img/OhMyDog!.png"/>
                     <!--span style="color: red">O</span
                    ><span style="color: orange">h</span
                    ><span style="color: yellow">M</span
@@ -27,6 +27,7 @@ get_header(); ?>
                    ><span style="color: rgb(178,161,199)">o</span
                    ><span style="color: rgb(197,79,197)">g</span
                    ><span style="color: red">!</span-->
+
                 </h1>
               </a>
               <p id="site-description"><?php bloginfo( 'description' ); ?></p>
@@ -42,24 +43,7 @@ get_header(); ?>
 
     <div class="navbar navbar-inverse navbar-relative-top">
       <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <?php
-           /** Loading WordPress Custom Menu  **/
-           wp_nav_menu( array(
-              'menu'            => 'main-menu',
-              'container_class' => 'nav-collapse',
-              'menu_class'      => 'nav',
-              'fallback_cb'     => '',
-              'menu_id' => 'main-menu',
-              'walker' => new Bootstrapwp_Walker_Nav_Menu()
-          ) ); ?>
-          <?php get_search_form(); ?>
-        </div>
+    	<!-- -->
       </div>
     </div>
     <!-- End Header -->
