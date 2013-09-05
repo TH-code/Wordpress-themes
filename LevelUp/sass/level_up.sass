@@ -1,0 +1,159 @@
+@import "properties"
+@import "twentytwelve"
+@import "compass/css3"
+
+/* =Typography
+ *-----------------------------------------------------------------------------
+
+body
+  font-size: 16px
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Expletus Sans', sans-serif
+  font-weight: 500
+
+#main
+  h1
+    font-size: 22px * 2
+    font-size: 1.571428571rem * 2
+
+
+/* =Links
+ *-----------------------------------------------------------------------------
+
+
+/* =Layout
+ *-----------------------------------------------------------------------------
+body > div > *
+  width: 1260px
+  margin: 0 auto
+
+html, body
+  background-color: #fff
+  color: $brown
+
+a, a:link
+  color: $orange
+  background: inline-image('../img/blank.png')
+
+.site-content
+  max-width: 66em
+
+#page
+  padding: 0 1em
+  margin: 2em auto
+
+.site-header
+  background:
+    color: $blue
+  padding: 1em
+  position: relative
+  hgroup
+    position: absolute
+    bottom:  -14px
+    left: 1em 
+  h1
+    margin: 0
+    padding: 0
+    line-height: 0
+    a, span
+      display: block
+      margin: 0
+      padding: 0
+    a
+      @extend %smooth
+      background: url('../img/levelup-back.png') no-repeat 16px 6px
+      &:hover
+        background:
+          position: 16px 1px
+    span
+      background: url('../img/levelup.png') no-repeat bottom left
+      overflow: hidden
+      text-indent: -5000px
+      width: 200px
+      height: 46px
+      padding: 35px 10px 0 0
+
+.site-description
+  display: none
+
+.site-content
+  margin: 5em 1em 
+
+#searchform
+  position: absolute
+  bottom:  1em
+  right: 1em 
+  background: 
+    color: #fff
+  label
+    display: none
+  input
+    border: none
+    background: 
+      color: #fff
+
+#searchsubmit
+  background: url('../img/search.png') no-repeat center center
+  text-indent: -5000px
+  width: 29px
+  height: 29px
+  overflow: hidden
+  
+.main-navigation
+  padding: 0 200px 0 250px
+
+.footer-wrapper
+  background:
+    color: $brown
+  color: #fff
+
+#colophon
+  max-width: inherit
+  position: relative
+  &:before, &:after
+    background: url('../img/brown.png') no-repeat top center
+    content: " "
+    display: block
+    position: absolute
+  &:before 
+    height: 1.5em
+    left: .2em
+    top: -1.5em
+    width: 2em
+  &:after
+    height: 3.5em
+    right: -2em
+    top: -3.5em
+    width: 4em
+
+.site-info
+  padding: 0 1em
+  margin: 2em auto
+  p
+    font-size: 13px * 1.25
+    font-size: 0.928571429rem * 1.25
+  &:before
+    background: url('../img/orange.png') no-repeat top center
+    content: " "
+    display: block
+    position: absolute
+    height: 1.5em
+    left: 68.7em
+    bottom: 0
+    width: 2em
+
+/* =Nav
+ *-----------------------------------------------------------------------------
+
+/* =Misc
+ *-----------------------------------------------------------------------------
+
+/* =Footer
+ *-----------------------------------------------------------------------------
+
+/* =Smooth
+ *-----------------------------------------------------------------------------
+$default-transition-duration : .3s
+%smooth
+  +transition()
